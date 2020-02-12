@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "service-crud-generator": {
+      "description": "A blank schematic.",
+      "factory": "./service-crud-generator/index#service",
+      "schema": "./schema.json"
+    }
+  }
+}

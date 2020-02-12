@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "ServiceHttpSchematics",
+    "title": "Service Options Schema",
+    "type":"object",
+    "description": "HTTP Service",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the service",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "x-prompt": "What the name of the service?"
+        }
+    },
+    "required": [
+        "name"
+    ]
+
+}
